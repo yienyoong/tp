@@ -124,13 +124,24 @@ public class ModelManager implements Model {
     @Override
     public void setStudent(Student target, Student editedStudent) {
         requireAllNonNull(target, editedStudent);
-
         studentBook.setStudent(target, editedStudent);
+    }
+
+    public Student getStudent(MatriculationNumber matriculationNumber) {
+        requireNonNull(matriculationNumber);
+        assert studentBook != null;
+        assert MatriculationNumber.isValidMatric(matriculationNumber.value);
+        return studentBook.getStudent(matriculationNumber);
     }
 
     @Override
     public List<Appointment> getAppointmentList() {
         return studentBook.getFlatAppointmentList();
+    }
+
+    @Override
+    public Appointment getAppointment(MatriculationNumber matriculationNumber) {
+        return studentBook.getAppointment(matriculationNumber);
     }
 
     @Override
@@ -148,6 +159,11 @@ public class ModelManager implements Model {
     @Override
     public void addAppointment(Appointment appointment) {
         studentBook.addAppointment(appointment);
+    }
+
+    @Override
+    public void deleteAppointment(Appointment appointment) {
+        studentBook.removeAppointment(appointment);
     }
 
     //=========== Filtered Student List Accessors =============================================================

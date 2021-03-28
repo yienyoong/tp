@@ -10,7 +10,8 @@ import seedu.student.logic.commands.AddAppointmentCommand;
 import seedu.student.logic.commands.AddCommand;
 import seedu.student.logic.commands.ClearCommand;
 import seedu.student.logic.commands.Command;
-import seedu.student.logic.commands.DeleteCommand;
+import seedu.student.logic.commands.DeleteApptCommand;
+import seedu.student.logic.commands.DeleteStudentCommand;
 import seedu.student.logic.commands.EditCommand;
 import seedu.student.logic.commands.ExitCommand;
 import seedu.student.logic.commands.FilterCommand;
@@ -54,8 +55,11 @@ public class StudentBookParser {
         case EditCommand.COMMAND_WORD:
             return new EditCommandParser().parse(arguments);
 
-        case DeleteCommand.COMMAND_WORD:
+        case DeleteStudentCommand.COMMAND_WORD:
             return new DeleteCommandParser().parse(arguments);
+
+        case DeleteApptCommand.COMMAND_WORD:
+            return new DeleteApptCommandParser().parse(arguments);
 
         case ClearCommand.COMMAND_WORD:
             return new ClearCommand();

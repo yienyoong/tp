@@ -167,6 +167,16 @@ public class AddAppointmentCommandTest {
         }
 
         @Override
+        public Student getStudent(MatriculationNumber matriculationNumber) {
+            throw new AssertionError("This method should not be called.");
+        }
+
+        @Override
+        public Appointment getAppointment(MatriculationNumber matriculationNumber) {
+            throw new AssertionError("This method should not be called.");
+        }
+
+        @Override
         public void updateFilteredStudentList(Predicate<Student> predicate) {
             throw new AssertionError("This method should not be called.");
         }
@@ -188,6 +198,11 @@ public class AddAppointmentCommandTest {
 
         @Override
         public void addAppointment(Appointment appointment) {
+            throw new AssertionError("This method should not be called.");
+        }
+
+        @Override
+        public void deleteAppointment(Appointment appointment) {
             throw new AssertionError("This method should not be called.");
         }
 
