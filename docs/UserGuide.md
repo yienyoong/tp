@@ -200,9 +200,11 @@ Examples:
 * `addAppt A7654321J d/2021-12-13 ts/14:00`
 
 | Before        | 
+| ------------- |
 |![AddApptBefore](images/AddApptBefore.png)
 
 | After        | 
+| ------------- |
 |![AddApptAfter](images/AddApptAfter.png)|
 
 ### Editing an appointment: `editAppt`
@@ -218,9 +220,11 @@ Examples:
 * `editAppt A7654321J d/2021-12-13 ts/10:00`
 
 | Before        | 
+| ------------- |
 |![editApptBefore](images/editApptBefore.png)
 
 | After        | 
+| ------------- |
 |![editApptAfter](images/editApptAfter.png)|
 
 ### Deleting an appointment: `deleteAppt`
@@ -236,9 +240,11 @@ Examples:
 * `deleteAppt A1234567X` deletes John Doe's appointments from the records, provided he had an appointment scheduled previously.
 
 | Before        | 
+| ------------- |
 |![DeleteApptBefore](images/deleteApptBefore.png)
 
 | After        | 
+| ------------- |
 |![DeleteApptAfter](images/deleteApptAfter.png)|
 
 ### Viewing statistics for appointments: `statsAppt`
@@ -272,18 +278,15 @@ Examples:
 * `find A1234567X` shows John Doe's personal information, and his appointment details if it is present.
 
 ![Find](images/find.png)
-
 ### Viewing help : `help`
 
 Display a pop-up window showing a list of commonly used commands in Vax@NUS and a link to our User Guide. 
 Format: `help`
-
 ### Clearing all data : `clear`
 
 Clearing all the data from Vax@NUS.
 
 Format: `clear`
-
 ### Exiting the program : `exit`
 
 Exits the program.
@@ -295,7 +298,6 @@ Format: `exit`
 Vax@NUS saves your current data into your computer automatically after any command. There is no need to save manually.
  
  :information_source: **NOTE:**  Vax@NUS will display our sample data file if no data file is found from your computer.
-
 ### Editing the data
 
 Vax@NUS data is saved as a JSON file [JAR file location]/data/studentbook.json. Advanced users are welcome to update data directly by editing that data file.
@@ -339,11 +341,11 @@ The following parameter formats must be followed:
  * SCI (for Faculty of Science)
  * USP (for University Scholars Programme)
  * YNC (for Yale-NUS College)
-
+ 
 ### Vaccination Status
 
  The `VACCINATION_STATUS` of a student must only be `vaccinated` or `unvaccinated`. It is not case-sensitive. 
-
+ 
 ### School Residence
 
  The `[SCHOOL_RESIDENCE]` of a student must be one of the following(case-sensitive):
