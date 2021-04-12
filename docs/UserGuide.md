@@ -200,11 +200,9 @@ Examples:
 * `addAppt A7654321J d/2021-12-13 ts/14:00`
 
 | Before        | 
-| ------------- |
 |![AddApptBefore](images/AddApptBefore.png)
 
 | After        | 
-| ------------- |
 |![AddApptAfter](images/AddApptAfter.png)|
 
 ### Editing an appointment: `editAppt`
@@ -220,11 +218,9 @@ Examples:
 * `editAppt A7654321J d/2021-12-13 ts/10:00`
 
 | Before        | 
-| ------------- |
 |![editApptBefore](images/editApptBefore.png)
 
 | After        | 
-| ------------- |
 |![editApptAfter](images/editApptAfter.png)|
 
 ### Deleting an appointment: `deleteAppt`
@@ -240,11 +236,9 @@ Examples:
 * `deleteAppt A1234567X` deletes John Doe's appointments from the records, provided he had an appointment scheduled previously.
 
 | Before        | 
-| ------------- |
 |![DeleteApptBefore](images/deleteApptBefore.png)
 
 | After        | 
-| ------------- |
 |![DeleteApptAfter](images/deleteApptAfter.png)|
 
 ### Viewing statistics for appointments: `statsAppt`
