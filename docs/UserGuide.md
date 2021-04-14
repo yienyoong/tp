@@ -40,7 +40,7 @@ If you are interested to know about the valid input taken in by our commands, do
 
 <div markdown="block" class="alert alert-info">
 
-:information_source: This icon indicates helpful notes 
+:information_source: This icon indicates helpful notes. 
 
 </div>
 
