@@ -30,7 +30,7 @@ Vax@NUS is a **one stop management app to efficiently track and schedule COVID-1
 --------------------------------------------------------------------------------------------------------------------
 ## About
 
-This sections aims to help you to navigate the user guide. 
+This section aims to help you to navigate the user guide. 
 <br> 
 
 [Quick start](#quick-start) section has been provided to help you set up Vax@NUS. 
