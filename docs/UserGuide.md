@@ -34,8 +34,10 @@ This sections aims to help you to navigate the user guide.
 <br> 
 [Quick start](#quick-start) section has been provided to help you set up Vax@NUS. 
 <br>
+
 Alternatively, to learn more about our features and the details of each command, do refer to [Features](#features). 
 <br>
+
 If you are interested to know about the valid input taken in by our commands, do take a look at [Input-Formats](#input-formats).
 
 <div markdown="block" class="alert alert-info">
@@ -49,8 +51,6 @@ If you are interested to know about the valid input taken in by our commands, do
 `command`: Words enclosed in a grey box are commands used by Vax@NUS' features. 
 
 </div>
-
-<br> 
 
 ## Features
 
