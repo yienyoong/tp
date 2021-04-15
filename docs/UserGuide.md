@@ -454,7 +454,7 @@ If unindicated, the `School Residence` field will default to `DOES NOT LIVE ON C
 <br>
 **A**: Allergies and past medical history.
 
-**Q**: Why is matriculation number used to identify a student? It is difficult to remember! <br>
+**Q**: Why is matriculation number used to identify a student? <br>
 **A**: Every student has a unique matriculation number. This guarantees that there will not be duplicate students in the records, which would make tracking records more tedious.  
 
 ### Managing appointments
