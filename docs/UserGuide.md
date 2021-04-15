@@ -128,7 +128,6 @@ Format: `delete MATRICULATION NUMBER`
 Examples:
 * `delete A1234567X` deletes John Doe from the records. If John Doe has an appointment, his appointment will be deleted as well.
 
-<br> 
 | Before        | 
 | ------------- |
 |![deleteBefore](images/deleteBefore.png)
