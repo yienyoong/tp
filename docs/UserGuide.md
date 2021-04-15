@@ -110,17 +110,9 @@ should be formatted.
 
 * Items in square brackets are optional.<br>
   e.g `n/NAME [r/SCHOOL RESIDENCE]` can be used as `n/John Doe r/RC4` or as `n/John Doe`.
-
-* Extraneous parameters for commands that do not take in parameters (such as `help`, `list`, `exit` and `clear`) will be ignored.<br>
-  e.g. if the command specifies `help 123`, it will be interpreted as `help`.
     
 * Prefixed parameters can be in any order.<br>
   e.g. if the command specifies `n/NAME p/PHONE_NUMBER`, `p/PHONE_NUMBER n/NAME` is also acceptable.
-  
-* If a prefixed parameter is expected only once in the command but you specify it multiple times, only the last occurrence of the parameter will be taken.<br>
-  e.g. if you specify `p/12341234 p/56785678`, only `p/56785678` will be taken.
-   
-* Parameters without prefix must strictly adhere to the order shown in the command.<br>
 
 </div>
 
@@ -130,7 +122,11 @@ Adds the details of a student to Vax@NUS records.
 
 Format: `add MATRICULATION_NUMBER n/NAME f/FACULTY p/PHONE_NUMBER e/EMAIL a/ADDRESS s/VACCINATION_STATUS m/MEDICAL_DETAILS [r/SCHOOL_RESIDENCE]`
 
-:information_source: **NOTE** The default School Residence is `DOES_NOT_LIVE_ON_CAMPUS` if it is not specified. 
+<div markdown="block" class="alert alert-info">
+
+:information_source: **NOTE:** The default School Residence is `DOES_NOT_LIVE_ON_CAMPUS` if it is not specified. 
+
+</div>
 
 > For a smooth user experience, please refer to the [Input Formats](#input-formats) section below for more information regarding the input accepted by the add student command.
 
@@ -154,7 +150,11 @@ Format: `edit INDEX [n/NAME] [f/FACULTY] [p/PHONE] [e/EMAIL] [a/ADDRESS] [s/VACC
 
 All inputs specified are optional, but at least one of them must be provided. After execution of the `edit` command, the existing value specified will be updated to the input value.  
 
+<div markdown="block" class="alert alert-info">
+
  :information_source: **NOTE:** Every field except the student's matriculation number can be edited. Should you wish to edit the matriculation number of a student, you must first delete the student entry and add a new one with the updated matriculation number. 
+
+</div>
 
 > For a smooth user experience, please refer to the [Input Formats](#input-formats) section below for more information regarding the input accepted by the edit student command.
 
@@ -186,11 +186,11 @@ Format: `delete MATRICULATION NUMBER`
 
 Examples:
 * `delete A1234567X` deletes John Doe from the records. If John Doe has an appointment, his appointment will be deleted as well.
-
 <br> 
+
 | Before        | 
 | ------------- |
-|![deleteBefore](images/deleteBefore.png)
+|![deleteBefore](images/deleteBefore.png)|
 
 | After        | 
 | ------------- |
@@ -200,7 +200,11 @@ Examples:
 
 Shows all student records in Vax@NUS that matches the specified vaccination status, faculty or school residence.
 
-:information_source: NOTE: The filter command only changes the view of the student list and not the view of the appointment list.
+<div markdown="block" class="alert alert-info">
+
+:information_source: **NOTE:** The filter command only changes the view of the student list and not the view of the appointment list.
+
+</div>
 
 Format: <br>
 `filter VACCINATION_STATUS`
@@ -361,21 +365,12 @@ Format: `exit`
 ### Saving the data
 
 Vax@NUS saves your current data into your computer automatically after any command. There is no need to save manually.
- 
+
+<div markdown="block" class="alert alert-info">
+
  :information_source: **NOTE:**  Vax@NUS will display our sample data file if no data file is found from your computer.
-### Editing the data
 
-Vax@NUS data is saved as a JSON file [JAR file location]/data/studentbook.json. Advanced users are welcome to update data directly by editing that data file.
-
-> Please refer to the [Input Formats](#input-formats) section when editing the data file to conform to the required format.
-
-Editing a student's matriculation number through the JSON file is allowed, however, extra care must be taken to ensure data integrity. 
-
-If you change a student's matriculation number, you must also update the matriculation number for the corresponding student's appointment. 
-Failure to do so will result in an invalid data file format as the appointment does not belong to any student. 
-
-> :warning: If your direct changes to the data file result in invalid data formatting, Vax@NUS will discard all data and start with an empty data file in your next launch. Be very careful!
-
+</div>
 >--------------------------------------------------------------------------------------------------------------------
 
 ## Input Formats
