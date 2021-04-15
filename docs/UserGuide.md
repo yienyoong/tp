@@ -10,9 +10,9 @@ title: User Guide
 --------------------------------------------------------------------------------------------------------------------
 ## Introduction
 
-Vax@NUS was conceived at the start of Singapore's COVID-19 vaccination campaign. Our team sought to streamline the 
-vaccine rollout for the University Health Centre(UHC), responsible for administering vaccines to NUS students, when they become eligible to receive the vaccine. 
-Feedback gathered from staff revealed that existing systems were be slow, and difficult to use, potentially impacting the speed of the rollout. 
+Vax@NUS was conceived at the start of Singapore's COVID-19 vaccination campaign. Our team sought to develop a solution to keep track and schedule COVID-19 vaccinations 
+for the University Health Centre (UHC), which is responsible for administering vaccines to NUS students. 
+Feedback gathered from staff revealed that the existing system was slow and difficult to use, potentially impacting the speed of the vaccination rollout. 
 
 Therefore, Vax@NUS was developed. It is a **one stop management app to efficiently track and schedule COVID-19 vaccinations for NUS students.** 
 It is a desktop app **optimized for use via a Command Line Interface (CLI)** while still having the benefits of a Graphical User Interface (GUI).
@@ -30,7 +30,7 @@ Read on to find out how you can use Vax@NUS.
 
 1. Copy the file to the folder you want to use as the _home folder_ for your Vax@NUS application.
 
-1. Double-click the file to start the app. The GUI similar to the below should appear in a few seconds. 
+1. Double-click the file to start the app. The GUI similar to the one below should appear in a few seconds. 
    Sample data will be displayed to show you how the user interface of the app looks.<br>
    ![Ui](images/Ui.png)
 
@@ -71,7 +71,7 @@ Prefix | Keyword           | As Used
 **m/** | MEDICAL_DETAILS   | `m/MEDICAL_DETAILS`
 **r/** | SCHOOL_RESIDENCE  | `r/SCHOOL_RESIDENCE`
 
-Please also refer to the [Input Formats](#input-formats) below to find out how the information
+Please also refer to the [Input Formats](#input-formats) section below to find out how the information
 should be formatted.
 --------------------
 
@@ -490,3 +490,5 @@ Action | Format, Examples
 * **COVID-19**: The COVID-19 pandemic, also known as the coronavirus pandemic, is a global pandemic of coronavirus disease 2019 (COVID-19) caused by severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2).
 * **Vaccine**: Singapore has two approved COVID-19 vaccines, one developed by Pfizer-BioNTech,
   the other by Moderna. Both require two doses, 21 days apart for Pfizer-BioNTech, 28 days apart for Moderna.
+* **NUS**: An acronym for National University of Singapore, one of Singapore's flagship publicly-funded universities. 
+* **UHC**: An acronym for University Health Centre, a health service located on NUS campus for students. 
