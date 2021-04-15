@@ -2,32 +2,26 @@
 layout: page
 title: User Guide
 ---
-
-Vax@NUS is a **one stop management app to efficiently track and schedule COVID-19 vaccinations for NUS students.** It is a desktop app **optimized for use via a Command Line Interface (CLI)** while still having the benefits of a Graphical User Interface (GUI). If you can type fast, Vax@NUS can get your appointment management tasks done faster than traditional GUI apps.
-
 * Table of Contents
 {:toc}
 
 --------------------------------------------------------------------------------------------------------------------
+## Introduction
 
-## Quick start
+Welcome to Vax@NUS!
 
-1. Ensure you have Java `11` or above installed in your Computer.
+Vax@NUS was conceived at the start of Singapore's COVID-19 vaccination campaign. Our team sought to develop a solution to keep track and schedule COVID-19 vaccinations 
+for the University Health Centre (UHC), which is responsible for administering vaccines to NUS students. 
+Feedback gathered from staff revealed that the existing system was slow and difficult to use, potentially impacting the speed of the vaccination rollout. 
 
-1. Download the latest `VaxAtNUS.jar` from [here](https://github.com/AY2021S2-CS2103T-W10-4/tp/releases).
+Therefore, Vax@NUS was developed. It is a **one stop management app to efficiently track and schedule COVID-19 vaccinations for NUS students.** 
+It is a desktop app **optimized for use via a Command Line Interface (CLI)** while still having the benefits of a Graphical User Interface (GUI).
+If you can type fast, Vax@NUS can get your appointment management tasks done faster than traditional GUI apps.
 
-1. Copy the file to the folder you want to use as the _home folder_ for your Vax@NUS application.
+This project was done as part of the module CS2103T Software Engineering at the School of Computing of the National University of Singapore.
 
-1. Double-click the file to start the app. The GUI similar to the below should appear in a few seconds. Note how the app contains some sample data.<br>
-   ![Ui](images/Ui.png)
+Read on to find out how you can use Vax@NUS.
 
-1. Type the command in the command box and press Enter to execute it. e.g. typing **`help`** and pressing Enter will open the help window.<br>
-   Some example commands you can try:
-
-   * **`list`** : Lists all data.
-   * **`exit`** : Exits the app.
-
---------------------------------------------------------------------------------------------------------------------
 ## About
 
 This section aims to help you to navigate the user guide. 
@@ -52,6 +46,58 @@ If you are interested to know about the valid input taken in by our commands, do
 `command`: Words enclosed in a grey box are input into Vax@NUS. 
 
 </div>
+
+
+## Quick start
+
+1. Ensure you have Java `11` or above installed in your Computer.
+
+1. Download the latest `VaxAtNUS.jar` from [here](https://github.com/AY2021S2-CS2103T-W10-4/tp/releases).
+
+1. Copy the file to the folder you want to use as the _home folder_ for your Vax@NUS application.
+
+1. Double-click the file to start the app. The GUI similar to the one below should appear in a few seconds. 
+   Sample data will be displayed to show you how the user interface of the app looks.<br>
+   ![Ui](images/Ui.png)
+
+1. Type the command in the command box and press Enter to execute it. e.g. typing **`help`** and pressing Enter will open the help window.<br>
+
+1. Before you begin using Vax@NUS, here are some example commands you can use to work with the sample data to familarize yourself:
+   * **`add A1234567X n/John Doe f/COM p/98765432 e/johnd@example.com a/John street, block 123, #01-01 s/vaccinated m/peanut allergy r/RVRC
+     `** <br>
+     Adds a student named John Doe, identified by matriculation number A1234567X, to the student records, along with relevant personal details.
+   * **`addAppt A1234567X d/2021-12-13 ts/13:00
+     `** <br>
+     Creates a new vaccination appointment for John Doe, identified with matriculation number A1234567X, at the specified date and time. 
+   * **`statsAppt`** <br>
+    Tells you the number of appointments in the past week, and in the next week.
+   * **`delete A1234567X`** <br>
+    Deletes the information for John Doe, identified by his matriculation number, from the student records. Note that since
+     John Doe also has a vaccination appointment created, the appointment will also be deleted. 
+
+1. Refer to the [Features](#features) below for details of each command.
+
+1. When you are ready, you can remove all sample data with the `clear` command and begin adding real data. 
+--------------------------------------------------------------------------------------------------------------------
+
+## Prefix Table
+
+This table shows you which prefix should be used for the different pieces of information.
+
+Prefix | Keyword           | As Used
+-------|-------------------|----------                  
+**n/** | NAME              | `n/NAME`
+**f/** | FACULTY           | `f/FACULTY`
+**p/** | PHONE_NUMBER      | `p/PHONE_NUMBER`
+**e/** | EMAIL             | `e/EMAIL`
+**a/** | ADDRESS           | `a/ADDRESS`
+**s/** | VACCINATION_STATUS| `s/VACCINATION_STATUS`
+**m/** | MEDICAL_DETAILS   | `m/MEDICAL_DETAILS`
+**r/** | SCHOOL_RESIDENCE  | `r/SCHOOL_RESIDENCE`
+
+Please also refer to the [Input Formats](#input-formats) section below to find out how the information
+should be formatted.
+--------------------
 
 ## Features
 
@@ -82,11 +128,11 @@ If you are interested to know about the valid input taken in by our commands, do
 
 Adds the details of a student to Vax@NUS records. 
 
+Format: `add MATRICULATION_NUMBER n/NAME f/FACULTY p/PHONE_NUMBER e/EMAIL a/ADDRESS s/VACCINATION_STATUS m/MEDICAL_DETAILS [r/SCHOOL_RESIDENCE]`
+
 :information_source: **NOTE** The default School Residence is `DOES_NOT_LIVE_ON_CAMPUS` if it is not specified. 
 
 > For a smooth user experience, please refer to the [Input Formats](#input-formats) section below for more information regarding the input accepted by the add student command.
-
-Format: `add MATRICULATION_NUMBER n/NAME f/FACULTY p/PHONE_NUMBER e/EMAIL a/ADDRESS s/VACCINATION_STATUS m/MEDICAL_DETAILS [r/SCHOOL_RESIDENCE]`
 
 Examples:
 * `add A1234567X n/John Doe f/COM p/98765432 e/johnd@example.com a/John street, block 123, #01-01 s/vaccinated m/peanut allergy r/RVRC`
@@ -104,13 +150,13 @@ Examples:
 
 Edits a student in Vax@NUS records at the specified INDEX. The index refers to the index number shown in the displayed student list. The index must be a positive integer 1, 2, 3, …
 
+Format: `edit INDEX [n/NAME] [f/FACULTY] [p/PHONE] [e/EMAIL] [a/ADDRESS] [s/VACCINATION_STATUS] [m/MEDICAL_DETAILS] [r/SCHOOL_RESIDENCE]`
+
 All inputs specified are optional, but at least one of them must be provided. After execution of the `edit` command, the existing value specified will be updated to the input value.  
 
  :information_source: **NOTE:** Every field except the student's matriculation number can be edited. Should you wish to edit the matriculation number of a student, you must first delete the student entry and add a new one with the updated matriculation number. 
 
 > For a smooth user experience, please refer to the [Input Formats](#input-formats) section below for more information regarding the input accepted by the edit student command.
-
-Format: `edit INDEX [n/NAME] [f/FACULTY] [p/PHONE] [e/EMAIL] [a/ADDRESS] [s/VACCINATION_STATUS] [m/MEDICAL_DETAILS] [r/SCHOOL_RESIDENCE]`
 
 Examples:
 
@@ -398,6 +444,8 @@ If unindicated, the `School Residence` field will default to `DOES NOT LIVE ON C
 
 ## FAQ
 
+### Managing students
+
 **Q**: What do I do if I accidentally delete a student? 
 <br>
 **A**: Unfortunately, the deletion is permanent. You will have to manually re-add the student.
@@ -405,6 +453,11 @@ If unindicated, the `School Residence` field will default to `DOES NOT LIVE ON C
 **Q**: What can be included in medical details?
 <br>
 **A**: Allergies and past medical history.
+
+**Q**: Why is matriculation number used to identify a student? <br>
+**A**: Every student has a unique matriculation number. This guarantees that there will not be duplicate students in the records, which would make tracking records more tedious.  
+
+### Managing appointments
 
 **Q** : Am I able to reassign an appointment to another student?
 <br>
@@ -417,6 +470,10 @@ If unindicated, the `School Residence` field will default to `DOES NOT LIVE ON C
 **Q**: How long is a vaccination appointment?
 <br>
 **A**: Each vaccination appointment lasts 30 minutes, which includes registration, administering the vaccine and observation. 
+
+**Q**: Why is matriculation number used to identify an appointment? <br>
+**A**: This ensures that there are no duplicate appointments, and that appointments can only be made for NUS students.
+        However, we recognise the limitations, and are working on an update where appointments are identified by a unique ID instead of matriculation number. 
 
 -----------------------------------------------------------------------------------------------------------------
 ## Command Summary
@@ -451,4 +508,20 @@ Action | Format | Examples
 **Find Student And Appointment** | `find MATRICULATION_NUMBER` | `find A1234567X`
 **View Appointment Statistics** | `statsAppt` | N.A.
 
+--------------------------------------------------------------------------------
 
+## Glossary
+
+* **Index**: The number on the left side of the corresponding entry in the student records. 
+* **Prefix**: The alphabet, followed by a forward slash (/), that precedes the student's details entered. 
+* **Parameter**: The sequence of alphabets detailing containing a prefix and a student detail, forming part of a command. 
+* **GUI**: An acronym that stands for Graphic User Interface.
+* **CLI**: An acronym that stands for Command Line Interface.
+* **Command**: The text typed in by the user as an instruction for Vax@NUS.
+* **Case-sensitive**: Uppercase and lowercase letters are treated and parsed differently. 
+* **Alphanumeric**: Alphanumeric characters are those comprised of the combined set of the 26 alphabetic characters, A to Z, and the 10 Arabic numerals, 0 to 9.
+* **COVID-19**: The COVID-19 pandemic, also known as the coronavirus pandemic, is a global pandemic of coronavirus disease 2019 (COVID-19) caused by severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2).
+* **Vaccine**: Singapore has two approved COVID-19 vaccines, one developed by Pfizer-BioNTech,
+  the other by Moderna. Both require two doses, 21 days apart for Pfizer-BioNTech, 28 days apart for Moderna.
+* **NUS**: An acronym for National University of Singapore, one of Singapore's flagship publicly-funded universities. 
+* **UHC**: An acronym for University Health Centre, a health service located on NUS campus for students. 
