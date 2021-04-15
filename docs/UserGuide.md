@@ -49,7 +49,7 @@ If you are interested to know about the valid input taken in by our commands, do
 
 <div markdown="span" class="alert alert-primary">
 
-`command`: Words enclosed in a grey box are commands used by Vax@NUS' features. 
+`command`: Words enclosed in a grey box are input into Vax@NUS. 
 
 </div>
 
@@ -75,8 +75,6 @@ If you are interested to know about the valid input taken in by our commands, do
   e.g. if you specify `p/12341234 p/56785678`, only `p/56785678` will be taken.
    
 * Parameters without prefix must strictly adhere to the order shown in the command.<br>
-
-  
 
 </div>
 
@@ -423,34 +421,34 @@ If unindicated, the `School Residence` field will default to `DOES NOT LIVE ON C
 -----------------------------------------------------------------------------------------------------------------
 ## Command Summary
 
-Managing Students 
-
-Action | Format, Examples
---------|------------------
-**Add Student** | `add MATRICULATION_NUMBER n/NAME f/FACULTY p/PHONE_NUMBER e/EMAIL a/ADDRESS s/VACCINATION_STATUS m/MEDICAL_DETAILS [r/SCHOOL_RESIDENCE]` <br> e.g., `add A1234567X n/John Doe f/COM p/98765432 e/johnd@example.com a/John street, block 123, #01-01 s/vaccinated m/peanut allergy r/RVRC`
-**Edit Student** | `edit INDEX [n/NAME] [f/FACULTY] [p/PHONE] [e/EMAIL] [a/ADDRESS] [s/VACCINATION_STATUS] [m/MEDICAL_DETAILS] [r/SCHOOL_RESIDENCE]` <br> e.g., `edit 1 p/91234567 f/MED`
-**Delete Student** | `delete MATRICULATION_NUMBER` e.g., `delete A1234567X`
-**Filter Students** | `filter VACCINATION_STATUS` e.g., `filter vaccinated` <br> `filter FACULTY ` e.g., `filter COM` <br> `filter SCHOOL_RESIDENCE` e.g., `filter RVRC` 
-**Find Student And Appointment** | `find MATRICULATION_NUMBER` e.g., `find A1234567X`
-**View Student Statistics** | `stats FACULTY` e.g., `stats COM` <br> `stats SCHOOL_RESIDENCE` e.g., `stats RC4` <br> `stats NUS` <br> `stats all` 
-
-Managing Appointments
-
-Action | Format, Examples
---------|------------------
-**Add Appointment** | `addAppt MATRICULATION_NUMBER d/DATE ts/START_TIME` <br> e.g., `addAppt A1234567X d/2021-12-13 ts/13:00`
-**Edit Appointment** | `editAppt MATRICULATION_NUMBER d/DATE ts/START_TIME` <br> e.g.,`editAppt A1234567X d/2021-12-13 ts/14:00`
-**Delete Appointment** | `deleteAppt MATRICULATION_NUMBER` <br> e.g., `deleteAppt A1234567X`
-**Find Student And Appointment** | `find MATRICULATION_NUMBER` e.g., `find A1234567X`
-**View Appointment Statistics** | `statsAppt`
-
-
 General
 
-Action | Format, Examples
+Action | Format 
 --------|------------------
 **List All Data** | `list`
 **View Help** | `help` 
 **Clear All Data** | `clear` 
 **Exit Program** | `exit`
+
+Manage Students 
+
+Action | Format | Examples
+--------|------- |-----------
+**Add Student** | `add MATRICULATION_NUMBER n/NAME f/FACULTY p/PHONE_NUMBER e/EMAIL a/ADDRESS s/VACCINATION_STATUS m/MEDICAL_DETAILS [r/SCHOOL_RESIDENCE]` | `add A1234567X n/John Doe f/COM p/98765432 e/johnd@example.com a/John street, block 123, #01-01 s/vaccinated m/peanut allergy r/RVRC`
+**Edit Student** | `edit INDEX [n/NAME] [f/FACULTY] [p/PHONE] [e/EMAIL] [a/ADDRESS] [s/VACCINATION_STATUS] [m/MEDICAL_DETAILS] [r/SCHOOL_RESIDENCE]` | `edit 1 p/91234567 f/MED`
+**Delete Student** | `delete MATRICULATION_NUMBER` | `delete A1234567X`
+**Filter Students** | `filter VACCINATION_STATUS` | `filter vaccinated` <br> `filter FACULTY ` | `filter COM` <br> `filter SCHOOL_RESIDENCE` e.g., `filter RVRC` 
+**Find Student And Appointment** | `find MATRICULATION_NUMBER` | `find A1234567X`
+**View Student Statistics** | `stats FACULTY` e.g., `stats COM` <br> `stats SCHOOL_RESIDENCE` | `stats RC4` <br> `stats NUS` <br> `stats all` 
+
+Manage Appointments
+
+Action | Format | Examples
+--------|--------| ----------
+**Add Appointment** | `addAppt MATRICULATION_NUMBER d/DATE ts/START_TIME` | `addAppt A1234567X d/2021-12-13 ts/13:00`
+**Edit Appointment** | `editAppt MATRICULATION_NUMBER d/DATE ts/START_TIME`|`editAppt A1234567X d/2021-12-13 ts/14:00`
+**Delete Appointment** | `deleteAppt MATRICULATION_NUMBER` | `deleteAppt A1234567X`
+**Find Student And Appointment** | `find MATRICULATION_NUMBER` | `find A1234567X`
+**View Appointment Statistics** | `statsAppt` | N.A.
+
 
