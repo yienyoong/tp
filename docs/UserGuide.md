@@ -193,7 +193,9 @@ Sample Output for `stats PGPH`:
 
 ### Adding an appointment: `addAppt`
 
-Adds an appointment to Vax@NUS' records. 
+Adds an appointment to Vax@NUS' records.
+
+The current version of Vax@NUS allows no more than one appointment scheduled for each student. You thus won't be able to add a new appointment for a student if they already have one.
 
 Appointments can be added for both unvaccinated and vaccinated students, as appointments can also entail follow-ups or check-ups in addition to vaccinations.
 
@@ -378,7 +380,7 @@ The following parameter formats must be followed:
 
 If unindicated, the `School Residence` field will default to `DOES NOT LIVE ON CAMPUS`
 
-### Conditions for valid appointments
+### Appointments
 * `DATE` must be of the format `YYYY-MM-DD`
 * `START_TIME` must be of the format `HH:00` or `HH:30`.
 * The duration of each appointment is fixed at 30 minutes.
