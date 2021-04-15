@@ -8,8 +8,6 @@ Vax@NUS is a **one stop management app to efficiently track and schedule COVID-1
 * Table of Contents
 {:toc}
 
-:information_source: This icon indicates helpful notes 
-
 --------------------------------------------------------------------------------------------------------------------
 
 ## Quick start
@@ -29,10 +27,31 @@ Vax@NUS is a **one stop management app to efficiently track and schedule COVID-1
    * **`list`** : Lists all data.
    * **`exit`** : Exits the app.
 
-1. Refer to the [Features](#features) below for details of each command.
-
 --------------------------------------------------------------------------------------------------------------------
+## About
+
+This section aims to help you to navigate the user guide. 
 <br> 
+
+[Quick start](#quick-start) section has been provided to help you set up Vax@NUS. 
+<br>
+
+Alternatively, to learn more about our features and the details of each command, do refer to [Features](#features). 
+<br>
+
+If you are interested to know about the valid input taken in by our commands, do take a look at [Input-Formats](#input-formats).
+
+<div markdown="block" class="alert alert-info">
+
+:information_source: This icon indicates helpful notes. 
+
+</div>
+
+<div markdown="span" class="alert alert-primary">
+
+`command`: Words enclosed in a grey box are input into Vax@NUS. 
+
+</div>
 
 ## Features
 
@@ -56,8 +75,6 @@ Vax@NUS is a **one stop management app to efficiently track and schedule COVID-1
   e.g. if you specify `p/12341234 p/56785678`, only `p/56785678` will be taken.
    
 * Parameters without prefix must strictly adhere to the order shown in the command.<br>
-
-  
 
 </div>
 
@@ -280,18 +297,15 @@ Examples:
 * `find A1234567X` shows John Doe's personal information, and his appointment details if it is present.
 
 ![Find](images/find.png)
-
 ### Viewing help : `help`
 
 Display a pop-up window showing a list of commonly used commands in Vax@NUS and a link to our User Guide. 
 Format: `help`
-
 ### Clearing all data : `clear`
 
 Clearing all the data from Vax@NUS.
 
 Format: `clear`
-
 ### Exiting the program : `exit`
 
 Exits the program.
@@ -303,7 +317,6 @@ Format: `exit`
 Vax@NUS saves your current data into your computer automatically after any command. There is no need to save manually.
  
  :information_source: **NOTE:**  Vax@NUS will display our sample data file if no data file is found from your computer.
-
 ### Editing the data
 
 Vax@NUS data is saved as a JSON file [JAR file location]/data/studentbook.json. Advanced users are welcome to update data directly by editing that data file.
@@ -347,11 +360,11 @@ The following parameter formats must be followed:
  * SCI (for Faculty of Science)
  * USP (for University Scholars Programme)
  * YNC (for Yale-NUS College)
-
+ 
 ### Vaccination Status
 
  The `VACCINATION_STATUS` of a student must only be `vaccinated` or `unvaccinated`. It is not case-sensitive. 
-
+ 
 ### School Residence
 
  The `[SCHOOL_RESIDENCE]` of a student must be one of the following(case-sensitive):
@@ -408,20 +421,34 @@ If unindicated, the `School Residence` field will default to `DOES NOT LIVE ON C
 -----------------------------------------------------------------------------------------------------------------
 ## Command Summary
 
-Action | Format, Examples
+General
+
+Action | Format 
 --------|------------------
-**Add Student** | `add MATRICULATION_NUMBER n/NAME f/FACULTY p/PHONE_NUMBER e/EMAIL a/ADDRESS s/VACCINATION_STATUS m/MEDICAL_DETAILS [r/SCHOOL_RESIDENCE]` <br> e.g., `add A1234567X n/John Doe f/COM p/98765432 e/johnd@example.com a/John street, block 123, #01-01 s/vaccinated m/peanut allergy r/RVRC`
-**Edit Student** | `edit INDEX [n/NAME] [f/FACULTY] [p/PHONE] [e/EMAIL] [a/ADDRESS] [s/VACCINATION_STATUS] [m/MEDICAL_DETAILS] [r/SCHOOL_RESIDENCE]` <br> e.g., `edit 1 p/91234567 f/MED`
-**Delete Student** | `delete MATRICULATION_NUMBER` e.g., `delete A1234567X`
-**Filter Students** | `filter VACCINATION_STATUS` e.g., `filter vaccinated` <br> `filter FACULTY ` e.g., `filter COM` <br> `filter SCHOOL_RESIDENCE` e.g., `filter RVRC` 
-**View Student Statistics** | `stats FACULTY` e.g., `stats COM` <br> `stats SCHOOL_RESIDENCE` e.g., `stats RC4` <br> `stats NUS` <br> `stats all` 
-**Add Appointment** | `addAppt MATRICULATION_NUMBER d/DATE ts/START_TIME` <br> e.g., `addAppt A1234567X d/2021-12-13 ts/13:00`
-**Edit Appointment** | `editAppt MATRICULATION_NUMBER d/DATE ts/START_TIME` <br> e.g.,`editAppt A1234567X d/2021-12-13 ts/14:00`
-**Delete Appointment** | `deleteAppt MATRICULATION_NUMBER` <br> e.g., `deleteAppt A1234567X`
-**View Appointment Statistics** | `statsAppt`
 **List All Data** | `list`
-**Find Student And Appointment** | `find MATRICULATION_NUMBER` e.g., `find A1234567X`
 **View Help** | `help` 
 **Clear All Data** | `clear` 
 **Exit Program** | `exit`
+
+Manage Students 
+
+Action | Format | Examples
+--------|------- |-----------
+**Add Student** | `add MATRICULATION_NUMBER n/NAME f/FACULTY p/PHONE_NUMBER e/EMAIL a/ADDRESS s/VACCINATION_STATUS m/MEDICAL_DETAILS [r/SCHOOL_RESIDENCE]` | `add A1234567X n/John Doe f/COM p/98765432 e/johnd@example.com a/John street, block 123, #01-01 s/vaccinated m/peanut allergy r/RVRC`
+**Edit Student** | `edit INDEX [n/NAME] [f/FACULTY] [p/PHONE] [e/EMAIL] [a/ADDRESS] [s/VACCINATION_STATUS] [m/MEDICAL_DETAILS] [r/SCHOOL_RESIDENCE]` | `edit 1 p/91234567 f/MED`
+**Delete Student** | `delete MATRICULATION_NUMBER` | `delete A1234567X`
+**Filter Students** | `filter VACCINATION_STATUS` | `filter vaccinated` <br> `filter FACULTY ` | `filter COM` <br> `filter SCHOOL_RESIDENCE` e.g., `filter RVRC` 
+**Find Student And Appointment** | `find MATRICULATION_NUMBER` | `find A1234567X`
+**View Student Statistics** | `stats FACULTY` e.g., `stats COM` <br> `stats SCHOOL_RESIDENCE` | `stats RC4` <br> `stats NUS` <br> `stats all` 
+
+Manage Appointments
+
+Action | Format | Examples
+--------|--------| ----------
+**Add Appointment** | `addAppt MATRICULATION_NUMBER d/DATE ts/START_TIME` | `addAppt A1234567X d/2021-12-13 ts/13:00`
+**Edit Appointment** | `editAppt MATRICULATION_NUMBER d/DATE ts/START_TIME`|`editAppt A1234567X d/2021-12-13 ts/14:00`
+**Delete Appointment** | `deleteAppt MATRICULATION_NUMBER` | `deleteAppt A1234567X`
+**Find Student And Appointment** | `find MATRICULATION_NUMBER` | `find A1234567X`
+**View Appointment Statistics** | `statsAppt` | N.A.
+
 
