@@ -125,7 +125,7 @@ should be formatted.
 
 </div>
 
-### General Features
+## General Features
 
 ### Listing all data : `list`
 
@@ -279,7 +279,7 @@ Examples:
 1. To see the percentage of vaccinated residents in PGPH , simply enter `stats PGPH`
 ![StatsResidence](images/statsResidence.png)
 
-### Appointment Management features
+## Appointment Management Features
 
 ### Adding an appointment: `addAppt`
 
