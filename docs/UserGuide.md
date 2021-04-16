@@ -123,8 +123,6 @@ should be formatted.
 * Prefixed parameters can be in any order.<br>
   e.g. if the command specifies `n/NAME p/PHONE_NUMBER`, `p/PHONE_NUMBER n/NAME` is also acceptable.
 
-* For a smooth user experience, please refer to the [Input Formats](#input-formats) section below for more information regarding the input accepted by the commands.
-
 </div>
 
 ### Adding a student record: `add`
