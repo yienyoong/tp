@@ -475,7 +475,7 @@ If unindicated, the `School Residence` field will default to `DOES NOT LIVE ON C
 -----------------------------------------------------------------------------------------------------------------
 ## Command Summary
 
-####General
+#### General
 
 Action | Format 
 --------|------------------
@@ -484,7 +484,7 @@ Action | Format
 **Clear All Data** | `clear` 
 **Exit Program** | `exit`
 
-####Student Records Management  
+#### Student Records Management  
 
 Action | Format | Examples
 --------|------- |-----------
@@ -495,7 +495,7 @@ Action | Format | Examples
 **Find Student And Appointment** | `find MATRICULATION_NUMBER` | `find A1234567X`
 **View Student Statistics** | `stats FACULTY` e.g., `stats COM` <br> `stats SCHOOL_RESIDENCE` | `stats RC4` <br> `stats NUS` <br> `stats all` 
 
-####Appointment Management 
+#### Appointment Management 
 
 Action | Format | Examples
 --------|--------| ----------
