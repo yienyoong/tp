@@ -125,7 +125,7 @@ should be formatted.
 
 </div>
 
-## General Commands
+### General Features
 
 ### Listing all data : `list`
 
@@ -165,7 +165,7 @@ Vax@NUS saves your current data into your computer automatically after any comma
 
 </div>
 
-## Student Records Management 
+## Student Records Management Features
 
 ### Adding a student record: `add`
 
@@ -279,7 +279,7 @@ Examples:
 1. To see the percentage of vaccinated residents in PGPH , simply enter `stats PGPH`
 ![StatsResidence](images/statsResidence.png)
 
-## Appointment Management 
+### Appointment Management features
 
 ### Adding an appointment: `addAppt`
 
