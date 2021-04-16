@@ -46,7 +46,7 @@ If you are interested to know about the valid input taken in by our commands, do
 
 <div markdown="span" class="alert alert-primary">
 
-`command`: Words enclosed in a grey box are input into Vax@NUS. 
+`command`: Words enclosed in a grey box are words used in Vax@NUS’s commands. 
 
 </div>
 
