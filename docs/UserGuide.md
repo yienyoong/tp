@@ -84,7 +84,6 @@ If you are interested to know about the valid input taken in by our commands, do
 1. Refer to the [Features](#features) below for details of each command.
 1. When you are ready, you can remove all sample data with the `clear` command and begin adding real data. 
 
-
 --------------------------------------------------------------------------------------------------------------------
 
 ## Prefix Table
@@ -105,10 +104,9 @@ Prefix | Keyword           | Used As
 Please also refer to the [Input Formats](#input-formats) section below to find out how the information
 should be formatted.
 
-
 ----------------------------------------------------------------------------------------------------
 
-## Features
+# Features
 
 <div markdown="block" class="alert alert-info">
 
@@ -421,7 +419,6 @@ If unindicated, the `School Residence` field will default to `DOES NOT LIVE ON C
 * The duration of each appointment is fixed at 30 minutes.
 * No appointment should clash with any other appointments.
 * The student that the appointment is for must exist in the records.
-
 --------------------------------------------------------------------------------------------------------------------
 
 ## FAQ
@@ -482,7 +479,6 @@ Action | Format | Examples
 **Delete Appointment** | `deleteAppt MATRICULATION_NUMBER` | `deleteAppt A1234567X`
 **Find Student And Appointment** | `find MATRICULATION_NUMBER` | `find A1234567X`
 **View Appointment Statistics** | `statsAppt` | N.A.
-
 --------------------------------------------------------------------------------
 
 ## Glossary
