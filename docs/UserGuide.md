@@ -127,13 +127,13 @@ should be formatted.
 
 ### General Features
 
-### Listing all data : `list`
+#### Listing all data : `list`
 
 Shows a list of all students and all appointments in Vax@NUS records.
 
 Format: `list`
 
-### Viewing help : `help`
+#### Viewing help : `help`
 
 Display a pop-up window showing a list of commonly used commands in Vax@NUS and a link to our User Guide. 
 
@@ -141,7 +141,7 @@ Format: `help`
 
 ![Help](images/help.png)
 
-### Clearing all data : `clear`
+#### Clearing all data : `clear`
 
 Vax@NUS will clear all the student and appointment data and display an empty list of student records and appointments.
 
@@ -149,13 +149,13 @@ Format: `clear`
 
 ![clear](images/clear.png)
 
-### Exiting the program : `exit`
+#### Exiting the program : `exit`
 
 Exits the program.
 
 Format: `exit`
 
-### Saving the data
+#### Saving the data
 
 Vax@NUS saves your current data into your computer automatically after any command. There is no need to save manually.
 
@@ -167,7 +167,7 @@ Vax@NUS saves your current data into your computer automatically after any comma
 
 ### Student Records Management Features
 
-### Adding a student record: `add`
+#### Adding a student record: `add`
 
 Adds the details of a student to Vax@NUS records. 
 
@@ -184,7 +184,7 @@ To add a new student,
  2. The new student will be added at the end of the list and into Vax@NUS' record. The list of students will be also display the new student's particulars.
 ![AddStudentAfter](images/addStudentAfter.png)
 
-### Editing a student record: `edit`
+#### Editing a student record: `edit`
 
 Edits a student in Vax@NUS records at the specified INDEX. The index refers to the index number shown in the displayed student list. The index must be a positive integer 1, 2, 3, …
 
@@ -209,7 +209,7 @@ Examples:
 ![editAfter](images/editAfter.png)
 
 
-### Deleting a student record: `delete`
+#### Deleting a student record: `delete`
 
 Deletes the student specified by his/her matriculation number from Vax@NUS records.
 
@@ -229,7 +229,7 @@ Examples:
 
 ![deleteAfter](images/deleteAfter.png)
 
-### Filtering all student records: `filter`
+#### Filtering all student records: `filter`
 
 Shows all student records in Vax@NUS that matches the specified vaccination status, faculty or school residence.
 
@@ -254,7 +254,7 @@ Examples:
 1. Enter `filter vaccinated` to see a list of vaccinated students. 
 ![filter](images/filter.png)
 
-### Viewing statistics for student population: `stats`
+#### Viewing statistics for student population: `stats`
 
 Displays percentage of vaccinated students in the specified faculty/school residence, whole of NUS, or a list of percentages of vaccinated students in every Faculty and School Residence. 
 
@@ -281,7 +281,7 @@ Examples:
 
 ### Appointment Management Features
 
-### Adding an appointment: `addAppt`
+#### Adding an appointment: `addAppt`
 
 Adds an appointment to Vax@NUS' records.
 
@@ -299,7 +299,7 @@ Examples:
 2. The new appointment will be added to the end of the appointment list and into Vax@NUS' record.
 ![AddApptAfter](images/AddApptAfter.png)
 
-### Editing an appointment: `editAppt`
+#### Editing an appointment: `editAppt`
 
 Edits an appointment present in Vax@NUS records by referencing the student's matriculation number. 
 
@@ -314,7 +314,7 @@ Examples:
 2. The appointment list will display and reflect the latest change.
 ![editApptAfter](images/editApptAfter.png)
 
-### Deleting an appointment: `deleteAppt`
+#### Deleting an appointment: `deleteAppt`
 
 Deletes the appointment of the student with the specified matriculation number from Vax@NUS' records. 
 
@@ -332,7 +332,7 @@ Examples:
 
 ![DeleteApptAfter](images/deleteApptAfter.png)
 
-### Viewing statistics for appointments: `statsAppt`
+#### Viewing statistics for appointments: `statsAppt`
 
 Displays the number of upcoming and previous appointments within 1 week from the current day, including the current day.
 E.g., if today is Monday, `statsAppt` will count upcoming appointments from Monday(Today) - Sunday and past appointments from last Tuesday - Monday(Today).
@@ -344,7 +344,7 @@ Format: <br>
 ![StatsAppt](images/statsAppt.png)
 > Remark: Screenshot was taken on 9 April 2021.
 
-### Finding a student and their appointment : `find`
+#### Finding a student and their appointment : `find`
 
 Shows personal information, including appointment details if present, of the student that matches the specified matriculation number.
 
