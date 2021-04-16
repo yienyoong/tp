@@ -242,7 +242,8 @@ Examples:
 * `filter COM` 
 * `filter RVRC` 
 
-1. Enter `filter vaccinated` into the command box to see a list of vaccinated students. 
+
+* Enter `filter vaccinated` into the command box to see a list of vaccinated students. 
 ![filter](images/filter.png)
 
 #### Viewing statistics for student population: `stats`
@@ -267,7 +268,8 @@ Examples:
 * `stats NUS` displays the percentage of vaccinated students in NUS.
 * `stats all` displays the list of percentages of vaccinated students in every Faculty and School Residence.
 
-1. Enter `stats PGPH` into the command box to see the percentage of vaccinated residents in PGPH.
+    
+* Enter `stats PGPH` into the command box to see the percentage of vaccinated residents in PGPH.
 ![StatsResidence](images/statsResidence.png)
 
 ### Appointment Management Features
@@ -330,7 +332,9 @@ E.g., if today is Monday, `statsAppt` will count upcoming appointments from Mond
 
 Format: `statsAppt`
 
-1. Enter `statsAppt` into the command box to keep track of the numbers of appointments in a week.  
+Examples:
+
+* Enter `statsAppt` into the command box to keep track of the numbers of appointments in a week.  
 ![StatsAppt](images/statsAppt.png)
 > Remark: Screenshot was taken on 9 April 2021.
 
@@ -346,7 +350,7 @@ Format: `find MATRICULATION_NUMBER`
   
 Examples:
 
-1. `find A1234567X` shows John Doe's personal information, and his appointment details if it is present.
+* `find A1234567X` shows John Doe's personal information, and his appointment details if it is present.
 
 ![Find](images/find.png)
 
@@ -361,7 +365,7 @@ The following parameter formats must be followed:
 
 ### Faculty
 
- The `FACULTY` of a student must be one of the following(case-sensitive):
+ The `FACULTY` of a student must be one of the following (case-sensitive):
  * FASS (for Faculty of Arts and Social Sciences)
  * BIZ (for NUS Business School)
  * COM (for School of Computing)
