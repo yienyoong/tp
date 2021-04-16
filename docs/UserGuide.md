@@ -164,7 +164,7 @@ Examples:
 
 ![editBefore](images/editBefore.png)
 
-2. John Doe's particulars will be updated and the new information will be displayed in the list of students.  
+2. John Doe's particulars will be updated and the new information will be displayed in the list of student records.  
 
 ![editAfter](images/editAfter.png)
 
@@ -250,16 +250,12 @@ Appointments can be added for both unvaccinated and vaccinated students, as appo
 Format: `addAppt MATRICULATION_NUMBER d/DATE ts/START_TIME`
 
 Examples:
-* `addAppt A1234567X d/2021-12-13 ts/13:00`
-* `addAppt A7654321J d/2021-12-13 ts/14:00`
+1. Simply enter `addAppt A1234567X d/2021-12-13 ts/13:00` to add an appointment for John Doe.
 
-| Before        | 
-| ------------- |
-|![AddApptBefore](images/AddApptBefore.png)
+![AddApptBefore](images/AddApptBefore.png)
 
-| After        | 
-| ------------- |
-|![AddApptAfter](images/AddApptAfter.png)|
+2. The new appointment will be added to the end of the appointment list and into Vax@NUS' record.
+![AddApptAfter](images/AddApptAfter.png)
 
 ### Editing an appointment: `editAppt`
 
@@ -268,16 +264,13 @@ Edits an appointment present in Vax@NUS records by referencing the student's mat
 Format: `editAppt MATRICULATION_NUMBER d/DATE ts/START_TIME`
 
 Examples:
-* `editAppt A1234567X d/2021-11-13 ts/14:00`
-* `editAppt A7654321J d/2021-12-13 ts/10:00`
 
-| Before        | 
-| ------------- |
-|![editApptBefore](images/editApptBefore.png)
+1. Enter `editAppt A1234567X d/2021-11-13 ts/14:00` to change John Doe's appointment time from 1pm to 2pm.
 
-| After        | 
-| ------------- |
-|![editApptAfter](images/editApptAfter.png)|
+![editApptBefore](images/editApptBefore.png)
+
+2. The appointment list will display and reflect the latest change.
+![editApptAfter](images/editApptAfter.png)
 
 ### Deleting an appointment: `deleteAppt`
 
