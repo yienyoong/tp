@@ -57,9 +57,12 @@ If you are interested to know about the valid input taken in by our commands, do
 1. Copy the file to the folder you want to use as the _home folder_ for your Vax@NUS application.
 
 1. Double-click the file to start the app. The GUI similar to the one below should appear in a few seconds. 
-   Sample data will be displayed to show you how the user interface of the app looks.<br>
+   Sample data will be displayed to show you how the user interface of the app looks.
+   
    ![Ui](images/Ui.png)
-
+   
+   ![StudentCardUi](images/StudentCard.png)
+   
 1. Type the command in the command box and press Enter to execute it. e.g. typing **`help`** and pressing Enter will open the help window.<br>
 
 1. Before you begin using Vax@NUS, here are some example commands you can use to work with the sample data to familarize yourself:
@@ -186,8 +189,8 @@ Format: `delete MATRICULATION NUMBER`
 
 Examples:
 * `delete A1234567X` deletes John Doe from the records. If John Doe has an appointment, his appointment will be deleted as well.
-<br> 
 
+<br> 
 | Before        | 
 | ------------- |
 |![deleteBefore](images/deleteBefore.png)|
@@ -256,7 +259,9 @@ Sample Output for `stats PGPH`:
 
 ### Adding an appointment: `addAppt`
 
-Adds an appointment to Vax@NUS' records. 
+Adds an appointment to Vax@NUS' records.
+
+The current version of Vax@NUS allows no more than one appointment scheduled for each student. You thus will not be able to add a new appointment for a student if they already have one.
 
 Appointments can be added for both unvaccinated and vaccinated students, as appointments can also entail follow-ups or check-ups in addition to vaccinations.
 
@@ -401,7 +406,7 @@ The following parameter formats must be followed:
  * SCI (for Faculty of Science)
  * USP (for University Scholars Programme)
  * YNC (for Yale-NUS College)
- 
+
 ### Vaccination Status
 
  The `VACCINATION_STATUS` of a student must only be `vaccinated` or `unvaccinated`. It is not case-sensitive. 
@@ -428,7 +433,7 @@ The following parameter formats must be followed:
 
 If unindicated, the `School Residence` field will default to `DOES NOT LIVE ON CAMPUS`
 
-### Conditions for valid appointments
+### Appointments
 * `DATE` must be of the format `YYYY-MM-DD`
 * `START_TIME` must be of the format `HH:00` or `HH:30`.
 * The duration of each appointment is fixed at 30 minutes.
@@ -448,11 +453,6 @@ If unindicated, the `School Residence` field will default to `DOES NOT LIVE ON C
 **Q**: What can be included in medical details?
 <br>
 **A**: Allergies and past medical history.
-
-**Q**: Why is matriculation number used to identify a student? <br>
-**A**: Every student has a unique matriculation number. This guarantees that there will not be duplicate students in the records, which would make tracking records more tedious.  
-
-### Managing appointments
 
 **Q** : Am I able to reassign an appointment to another student?
 <br>
