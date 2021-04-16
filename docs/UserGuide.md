@@ -261,7 +261,7 @@ Sample Output for `stats PGPH`:
 
 Adds an appointment to Vax@NUS' records.
 
-The current version of Vax@NUS allows no more than one appointment scheduled for each student. You thus won't be able to add a new appointment for a student if they already have one.
+The current version of Vax@NUS allows no more than one appointment scheduled for each student. You thus will not be able to add a new appointment for a student if they already have one.
 
 Appointments can be added for both unvaccinated and vaccinated students, as appointments can also entail follow-ups or check-ups in addition to vaccinations.
 
