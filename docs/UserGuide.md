@@ -81,27 +81,6 @@ This section aims to help you to navigate the user guide.
 
 --------------------------------------------------------------------------------------------------------------------
 
-## Prefix Table
-
-This table shows you which prefix should be used for the different pieces of information.
-
-Prefix | Keyword           | Used As
--------|-------------------|----------                  
-**n/** | NAME              | `n/NAME`
-**f/** | FACULTY           | `f/FACULTY`
-**p/** | PHONE_NUMBER      | `p/PHONE_NUMBER`
-**e/** | EMAIL             | `e/EMAIL`
-**a/** | ADDRESS           | `a/ADDRESS`
-**s/** | VACCINATION_STATUS| `s/VACCINATION_STATUS`
-**m/** | MEDICAL_DETAILS   | `m/MEDICAL_DETAILS`
-**r/** | SCHOOL_RESIDENCE  | `r/SCHOOL_RESIDENCE`
-
-Please also refer to the [Input Formats](#input-formats) section below to find out how the information
-should be formatted.
-
-
-----------------------------------------------------------------------------------------------------
-
 ## Features
 
 <div markdown="block" class="alert alert-info">
@@ -116,6 +95,22 @@ should be formatted.
     
 * Prefixed parameters can be in any order.<br>
   e.g. if the command specifies `n/NAME p/PHONE_NUMBER`, `p/PHONE_NUMBER n/NAME` is also acceptable.
+
+* This table shows you which prefix should be used for the different pieces of information.
+
+   Prefix | Keyword           | Used As
+    -------|-------------------|----------                  
+    **n/** | NAME              | `n/NAME`
+    **f/** | FACULTY           | `f/FACULTY`
+    **p/** | PHONE_NUMBER      | `p/PHONE_NUMBER`
+    **e/** | EMAIL             | `e/EMAIL`
+    **a/** | ADDRESS           | `a/ADDRESS`
+    **s/** | VACCINATION_STATUS| `s/VACCINATION_STATUS`
+    **m/** | MEDICAL_DETAILS   | `m/MEDICAL_DETAILS`
+    **r/** | SCHOOL_RESIDENCE  | `r/SCHOOL_RESIDENCE`
+
+* Please also refer to the [Input Formats](#input-formats) section below to find out how the information
+should be formatted.
 
 </div>
 
