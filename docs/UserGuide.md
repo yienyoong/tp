@@ -25,7 +25,7 @@ This project was done as part of the module CS2103T Software Engineering at the 
 
 Read on to find out how you can use Vax@NUS.
 
-## About
+## Navigating the User Guide 
 
 This section aims to help you to navigate the user guide. 
 <br> 
@@ -124,6 +124,48 @@ should be formatted.
   e.g. if the command specifies `n/NAME p/PHONE_NUMBER`, `p/PHONE_NUMBER n/NAME` is also acceptable.
 
 </div>
+
+## General Commands
+
+### Listing all data : `list`
+
+Shows a list of all students and all appointments in Vax@NUS records.
+
+Format: `list`
+
+### Viewing help : `help`
+
+Display a pop-up window showing a list of commonly used commands in Vax@NUS and a link to our User Guide. 
+
+Format: `help`
+
+![Help](images/help.png)
+
+### Clearing all data : `clear`
+
+Vax@NUS will clear all the student and appointment data and display an empty list of student records and appointments.
+
+Format: `clear`
+
+![clear](images/clear.png)
+
+### Exiting the program : `exit`
+
+Exits the program.
+
+Format: `exit`
+
+### Saving the data
+
+Vax@NUS saves your current data into your computer automatically after any command. There is no need to save manually.
+
+<div markdown="block" class="alert alert-info">
+
+ :information_source: **NOTE:**  Vax@NUS will display our sample data file if no data file is found from your computer.
+
+</div>
+
+## Student Records Management 
 
 ### Adding a student record: `add`
 
@@ -237,6 +279,8 @@ Examples:
 1. To see the percentage of vaccinated residents in PGPH , simply enter `stats PGPH`
 ![StatsResidence](images/statsResidence.png)
 
+## Appointment Management 
+
 ### Adding an appointment: `addAppt`
 
 Adds an appointment to Vax@NUS' records.
@@ -315,43 +359,6 @@ Examples:
 
 ![Find](images/find.png)
 
-### Listing all data : `list`
-
-Shows a list of all students and all appointments in Vax@NUS records.
-
-Format: `list`
-
-### Viewing help : `help`
-
-Display a pop-up window showing a list of commonly used commands in Vax@NUS and a link to our User Guide. 
-
-Format: `help`
-
-![Help](images/help.png)
-
-### Clearing all data : `clear`
-
-Vax@NUS will clear all the student and appointment data and display an empty list of student records and appointments.
-
-Format: `clear`
-
-![clear](images/clear.png)
-
-### Exiting the program : `exit`
-
-Exits our program, Vax@NUS.
-
-Format: `exit`
-
-### Saving the data
-
-Vax@NUS saves your current data into your computer automatically after any command. There is no need to save manually.
-
-<div markdown="block" class="alert alert-info">
-
- :information_source: **NOTE:**  Vax@NUS will display our sample data file if no data file is found from your computer.
-
-</div>
 
 ## Input Formats
 
