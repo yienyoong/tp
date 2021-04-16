@@ -23,7 +23,8 @@ If you can type fast, Vax@NUS can get your appointment management tasks done fas
 
 This project was done as part of the module CS2103T Software Engineering at the School of Computing of the National University of Singapore.
 
-Our team would like to thank you for being on the frontlines and contributing to our national efforts against COVID-19. Read on to find out how you can use Vax@NUS.
+Read on to find out how you can use Vax@NUS.
+
 ## About
 
 This section aims to help you to navigate the user guide. 
