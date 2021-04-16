@@ -15,7 +15,7 @@ for the University Health Centre (UHC), which is responsible for administering v
 Feedback gathered from staff revealed that the existing system was slow and difficult to use, potentially impacting the speed of the vaccination rollout. 
 
 Therefore, Vax@NUS was developed. It is a **one stop management app to efficiently track and schedule COVID-19 vaccinations for NUS students.** 
-It allows UHC staff to enter profiles of NUS students into the app, create vaccination appointments for students, and update their details with just a few simple commands.
+It allows UHC staff to enter profiles of NUS students into the app, create and schedule vaccination appointments for students, and update their details with just a few simple commands.
 Staff can also use the statistic function to view at a glance, the vaccination rates of students, and the number of appointments booked for the upcoming week.
 
 Vax@NUS is a desktop app **optimized for use via a Command Line Interface (CLI)** while still having the benefits of a Graphical User Interface (GUI).
