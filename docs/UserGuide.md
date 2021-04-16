@@ -165,7 +165,7 @@ Vax@NUS saves your current data into your computer automatically after any comma
 
 </div>
 
-## Student Records Management Features
+### Student Records Management Features
 
 ### Adding a student record: `add`
 
@@ -279,7 +279,7 @@ Examples:
 1. To see the percentage of vaccinated residents in PGPH , simply enter `stats PGPH`
 ![StatsResidence](images/statsResidence.png)
 
-### Appointment Management features
+### Appointment Management Features
 
 ### Adding an appointment: `addAppt`
 
@@ -333,6 +333,7 @@ Examples:
 ![DeleteApptAfter](images/deleteApptAfter.png)
 
 ### Viewing statistics for appointments: `statsAppt`
+
 Displays the number of upcoming and previous appointments within 1 week from the current day, including the current day.
 E.g., if today is Monday, `statsAppt` will count upcoming appointments from Monday(Today) - Sunday and past appointments from last Tuesday - Monday(Today).
 
@@ -461,6 +462,8 @@ Action | Format
 **View Help** | `help` 
 **Clear All Data** | `clear` 
 **Exit Program** | `exit`
+
+<br> 
 
 #### Student Records Management  
 
