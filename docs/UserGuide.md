@@ -47,9 +47,9 @@ This section aims to help you to navigate the user guide.
 
 ## Quick start
 
-1. Ensure you have Java `11` or above installed in your Computer.
+1. Ensure you have Java 11 or above installed in your Computer.
 
-1. Download the latest `VaxAtNUS.jar` from [here](https://github.com/AY2021S2-CS2103T-W10-4/tp/releases).
+1. Download the latest **VaxAtNUS.jar** from [here](https://github.com/AY2021S2-CS2103T-W10-4/tp/releases).
 
 1. Copy the file to the folder you want to use as the _home folder_ for your Vax@NUS application.
 
