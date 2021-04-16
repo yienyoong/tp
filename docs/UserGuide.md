@@ -91,7 +91,7 @@ If you are interested to know about the valid input taken in by our commands, do
 
 This table shows you which prefix should be used for the different pieces of information.
 
-Prefix | Keyword           | As Used
+Prefix | Keyword           | Used As
 -------|-------------------|----------                  
 **n/** | NAME              | `n/NAME`
 **f/** | FACULTY           | `f/FACULTY`
@@ -131,25 +131,16 @@ Adds the details of a student to Vax@NUS records.
 
 Format: `add MATRICULATION_NUMBER n/NAME f/FACULTY p/PHONE_NUMBER e/EMAIL a/ADDRESS s/VACCINATION_STATUS m/MEDICAL_DETAILS [r/SCHOOL_RESIDENCE]`
 
-<div markdown="block" class="alert alert-info">
+Example:
 
-:information_source: **NOTE:** The default School Residence is `DOES_NOT_LIVE_ON_CAMPUS` if it is not specified. 
+To add a new student,
+ 
+ 1. Enter the input  `add A1234567X n/John Doe f/COM p/98765432 e/johnd@example.com a/John street, block 123, #01-01 s/vaccinated m/peanut allergy r/RVRC` into the command box.
 
-</div>
+![AddStudentBefore](images/addStudentBefore.png)
 
-> For a smooth user experience, please refer to the [Input Formats](#input-formats) section below for more information regarding the input accepted by the add student command.
-
-Examples:
-* `add A1234567X n/John Doe f/COM p/98765432 e/johnd@example.com a/John street, block 123, #01-01 s/vaccinated m/peanut allergy r/RVRC`
-* `add A7654321J n/Betsy Crowe f/ENG p/91119222 e/betsycrowe@example.com a/212 Orchard Road, #18-08 s/unvaccinated m/nose lift surgery in 2012`
-
-| Before        | 
-| ------------- |
-|![AddStudentBefore](images/addStudentBefore.png)
-
-| After        | 
-| ------------- |
-|![AddStudentAfter](images/addStudentAfter.png)|
+ 2. The new student will be added at the end of the list and into Vax@NUS' record. The list of students will be also display the new student's particulars.
+![AddStudentAfter](images/addStudentAfter.png)
 
 ### Editing a student record: `edit`
 
@@ -165,21 +156,15 @@ All inputs specified are optional, but at least one of them must be provided. Af
 
 </div>
 
-> For a smooth user experience, please refer to the [Input Formats](#input-formats) section below for more information regarding the input accepted by the edit student command.
-
 Examples:
 
-* `edit 1 p/91234567 f/MED` Edits the phone number and faculty of the first student to be 91234567 and MED respectively.
+1. Suppose, John Doe, has just changed his course and is currently studying in the school of engineering. Simply enter the command `edit 7 r/ENG` to edit his faculty. 
 
-* `edit 2 r/KRH`  Edits the school residence of the second student to be KRH.
+![editBefore](images/editBefore.png)
 
-| Before        | 
-| ------------- |
-|![editBefore](images/editBefore.png)
+2. John Doe's particulars will be updated and the new information will be displayed in the list of student records.  
 
-| After        | 
-| ------------- |
-|![editAfter](images/editAfter.png)|
+![editAfter](images/editAfter.png)
 
 
 ### Deleting a student record: `delete`
@@ -192,17 +177,15 @@ Format: `delete MATRICULATION NUMBER`
   no student with the specified matriculation number can be found in the records.
 * If the student to be deleted has an appointment, the student's appointment will be deleted as well.
   
-
 Examples:
-* `delete A1234567X` deletes John Doe from the records. If John Doe has an appointment, his appointment will be deleted as well.
 
-| Before        | 
-| ------------- |
-|![deleteBefore](images/deleteBefore.png)|
+1. Suppose, you want to delete John Doe from the records. You can enter `delete A1234567X` and his corresponding appointment will be deleted as well.
 
-| After        | 
-| ------------- |
-|![deleteAfter](images/deleteAfter.png)|
+![deleteBefore](images/deleteBefore.png)
+
+2. Upon deletion, the list of student records will be updated accordingly. 
+
+![deleteAfter](images/deleteAfter.png)
 
 ### Filtering all student records: `filter`
 
@@ -221,14 +204,12 @@ Format: <br>
 
 * Only one condition should be specified at a time. In this case, a condition refers to `VACCINATION_STATUS`, `FACULTY` or `SCHOOL_RESIDENCE`
 
-
-> For a smooth user experience, please refer to the [Input Formats](#input-formats) section below for more information regarding the input accepted by the filter command.
-
 Examples:
 * `filter vaccinated` or `filter unvaccinated`
 * `filter COM` 
 * `filter RVRC` 
 
+1. Enter `filter vaccinated` to see a list of vaccinated students. 
 ![filter](images/filter.png)
 
 ### Viewing statistics for student population: `stats`
@@ -246,9 +227,6 @@ Format: <br>
 * If there is no available data for the specified faculty or school residence, a message will be displayed to inform
   users that the specified faculty or school residence has no available data.
 
-> For a smooth user experience, please refer to the [Input Formats](#input-formats) section below for more information regarding the input accepted by the stats command.
-
-
 Examples:
 * `stats COM` displays the percentage of vaccinated students in School of Computing.
 * `stats RC4` displays the percentage of vaccinated students in RC4.
@@ -256,10 +234,7 @@ Examples:
 * `stats NUS` displays the percentage of vaccinated students in NUS.
 * `stats all` displays the list of percentages of vaccinated students in every Faculty and School Residence.
 
-Sample Output for `stats all`:
-![StatsALl](images/statsAll.png)
-
-Sample Output for `stats PGPH`:
+1. To see the percentage of vaccinated residents in PGPH , simply enter `stats PGPH`
 ![StatsResidence](images/statsResidence.png)
 
 ### Adding an appointment: `addAppt`
@@ -272,19 +247,13 @@ Appointments can be added for both unvaccinated and vaccinated students, as appo
 
 Format: `addAppt MATRICULATION_NUMBER d/DATE ts/START_TIME`
 
-> For a smooth user experience, please refer to the [appointments](#appointments) section below for more information regarding the details of an appointment accepted by Vax@NUS.
-
 Examples:
-* `addAppt A1234567X d/2021-12-13 ts/13:00`
-* `addAppt A7654321J d/2021-12-13 ts/14:00`
+1. Simply enter `addAppt A1234567X d/2021-12-13 ts/13:00` to add an appointment for John Doe.
 
-| Before        | 
-| ------------- |
-|![AddApptBefore](images/AddApptBefore.png)
+![AddApptBefore](images/AddApptBefore.png)
 
-| After        | 
-| ------------- |
-|![AddApptAfter](images/AddApptAfter.png)|
+2. The new appointment will be added to the end of the appointment list and into Vax@NUS' record.
+![AddApptAfter](images/AddApptAfter.png)
 
 ### Editing an appointment: `editAppt`
 
@@ -292,19 +261,14 @@ Edits an appointment present in Vax@NUS records by referencing the student's mat
 
 Format: `editAppt MATRICULATION_NUMBER d/DATE ts/START_TIME`
 
-> For a smooth user experience, please refer to the [appointments](#appointments) section below for more information regarding what the details of an appointment accepted by Vax@NUS.
-
 Examples:
-* `editAppt A1234567X d/2021-11-13 ts/14:00`
-* `editAppt A7654321J d/2021-12-13 ts/10:00`
 
-| Before        | 
-| ------------- |
-|![editApptBefore](images/editApptBefore.png)
+1. Enter `editAppt A1234567X d/2021-11-13 ts/14:00` to change John Doe's appointment time from 1pm to 2pm.
 
-| After        | 
-| ------------- |
-|![editApptAfter](images/editApptAfter.png)|
+![editApptBefore](images/editApptBefore.png)
+
+2. The appointment list will display and reflect the latest change.
+![editApptAfter](images/editApptAfter.png)
 
 ### Deleting an appointment: `deleteAppt`
 
@@ -316,15 +280,13 @@ Format: `deleteAppt MATRICULATION_NUMBER`
   the matriculation number or appointment is not found.
 
 Examples:
-* `deleteAppt A1234567X` deletes John Doe's appointments from the records, provided he had an appointment scheduled previously.
+1.  `deleteAppt A1234567X` deletes John Doe's appointments from the records, provided he had an appointment scheduled previously.
 
-| Before        | 
-| ------------- |
-|![DeleteApptBefore](images/deleteApptBefore.png)
+![DeleteApptBefore](images/deleteApptBefore.png)
 
-| After        | 
-| ------------- |
-|![DeleteApptAfter](images/deleteApptAfter.png)|
+2. The list of appointments will be updated accordingly after the appointment deletion.  
+
+![DeleteApptAfter](images/deleteApptAfter.png)
 
 ### Viewing statistics for appointments: `statsAppt`
 Displays the number of upcoming and previous appointments within 1 week from the current day, including the current day.
@@ -333,15 +295,9 @@ E.g., if today is Monday, `statsAppt` will count upcoming appointments from Mond
 Format: <br>
 `statsAppt`
 
-Sample Output for `statsAppt`:
+1. Enter `statsAppt` to keep track of the numbers of appointments in a week.  
 ![StatsAppt](images/statsAppt.png)
 > Remark: Screenshot was taken on 9 April 2021.
-
-### Listing all data : `list`
-
-Shows a list of all students and all appointments in Vax@NUS records.
-
-Format: `list`
 
 ### Finding a student and their appointment : `find`
 
@@ -354,21 +310,36 @@ Format: `find MATRICULATION_NUMBER`
 * If the student found does not have an appointment, the appointment list will appear as empty.
   
 Examples:
-* `find A1234567X` shows John Doe's personal information, and his appointment details if it is present.
+
+1. `find A1234567X` shows John Doe's personal information, and his appointment details if it is present.
 
 ![Find](images/find.png)
+
+### Listing all data : `list`
+
+Shows a list of all students and all appointments in Vax@NUS records.
+
+Format: `list`
+
 ### Viewing help : `help`
 
 Display a pop-up window showing a list of commonly used commands in Vax@NUS and a link to our User Guide. 
+
 Format: `help`
+
+![Help](images/help.png)
+
 ### Clearing all data : `clear`
 
-Clearing all the data from Vax@NUS.
+Vax@NUS will clear all the student and appointment data and display an empty list of student records and appointments.
 
 Format: `clear`
+
+![clear](images/clear.png)
+
 ### Exiting the program : `exit`
 
-Exits the program.
+Exits our program, Vax@NUS.
 
 Format: `exit`
 
@@ -381,7 +352,6 @@ Vax@NUS saves your current data into your computer automatically after any comma
  :information_source: **NOTE:**  Vax@NUS will display our sample data file if no data file is found from your computer.
 
 </div>
->--------------------------------------------------------------------------------------------------------------------
 
 ## Input Formats
 
