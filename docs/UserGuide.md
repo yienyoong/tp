@@ -63,15 +63,15 @@ This section aims to help you to navigate the user guide.
 1. Type the command in the command box and press Enter to execute it. e.g. typing **`help`** and pressing Enter will open the help window.<br>
 
 1. Before you begin using Vax@NUS, here are some example commands you can use to work with the sample data to familarize yourself:
-   * **`add A1234567X n/John Doe f/COM p/98765432 e/johnd@example.com a/John street, block 123, #01-01 s/vaccinated m/peanut allergy r/RVRC
+   * `add A1234567X n/John Doe f/COM p/98765432 e/johnd@example.com a/John street, block 123, #01-01 s/vaccinated m/peanut allergy r/RVRC
      `** <br>
      Adds a student named John Doe, identified by matriculation number A1234567X, to the student records, along with relevant personal details.
-   * **`addAppt A1234567X d/2021-12-13 ts/13:00
+   * `addAppt A1234567X d/2021-12-13 ts/13:00
      `** <br>
      Creates a new vaccination appointment for John Doe, identified with matriculation number A1234567X, at the specified date and time. 
-   * **`statsAppt`** <br>
+   * `statsAppt`** <br>
     Tells you the number of appointments in the past week, and in the next week.
-   * **`delete A1234567X`** <br>
+   * `delete A1234567X`** <br>
     Deletes the information for John Doe, identified by his matriculation number, from the student records. Note that since
      John Doe also has a vaccination appointment created, the appointment will also be deleted. 
 
@@ -480,6 +480,8 @@ Action | Format | Examples
 **View Appointment Statistics** | `statsAppt` | N.A.
 
 --------------------------------------------------------------------------------
+
+
 
 ## Glossary
 
