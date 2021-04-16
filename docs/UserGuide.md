@@ -132,11 +132,6 @@ Adds the details of a student to Vax@NUS records.
 
 Format: `add MATRICULATION_NUMBER n/NAME f/FACULTY p/PHONE_NUMBER e/EMAIL a/ADDRESS s/VACCINATION_STATUS m/MEDICAL_DETAILS [r/SCHOOL_RESIDENCE]`
 
-<div markdown="block" class="alert alert-info">
-
-:information_source: **NOTE:** The default School Residence is `DOES_NOT_LIVE_ON_CAMPUS` if it is not specified. 
-</div>
-
 Example:
 
 To add a new student,
