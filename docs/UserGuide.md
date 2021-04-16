@@ -488,6 +488,8 @@ Action | Format | Examples
 
 --------------------------------------------------------------------------------
 
+
+
 ## Glossary
 
 * **Index**: The number on the left side of the corresponding entry in the student records. 
