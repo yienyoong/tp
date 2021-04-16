@@ -463,6 +463,8 @@ Action | Format
 **Clear All Data** | `clear` 
 **Exit Program** | `exit`
 
+<br> 
+
 #### Student Records Management  
 
 Action | Format | Examples
