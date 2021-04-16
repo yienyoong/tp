@@ -269,7 +269,7 @@ Appointments can be added for both unvaccinated and vaccinated students, as appo
 
 Format: `addAppt MATRICULATION_NUMBER d/DATE ts/START_TIME`
 
-> For a smooth user experience, please refer to the [conditions for valid appointments](#conditions-for-valid-appointments) section below for more information regarding the details of an appointment accepted by Vax@NUS.
+> For a smooth user experience, please refer to the [appointments](#appointments) section below for more information regarding the details of an appointment accepted by Vax@NUS.
 
 Examples:
 * `addAppt A1234567X d/2021-12-13 ts/13:00`
@@ -289,7 +289,7 @@ Edits an appointment present in Vax@NUS records by referencing the student's mat
 
 Format: `editAppt MATRICULATION_NUMBER d/DATE ts/START_TIME`
 
-> For a smooth user experience, please refer to the [conditions for valid appointments](#conditions-for-valid-appointments) section below for more information regarding what the details of an appointment accepted by Vax@NUS.
+> For a smooth user experience, please refer to the [appointments](#appointments) section below for more information regarding what the details of an appointment accepted by Vax@NUS.
 
 Examples:
 * `editAppt A1234567X d/2021-11-13 ts/14:00`
@@ -445,8 +445,6 @@ If unindicated, the `School Residence` field will default to `DOES NOT LIVE ON C
 --------------------------------------------------------------------------------------------------------------------
 
 ## FAQ
-
-### Managing students
 
 **Q**: What do I do if I accidentally delete a student? 
 <br>
