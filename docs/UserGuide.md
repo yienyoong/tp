@@ -333,7 +333,7 @@ Format: `help`
 
 ### Clearing all data : `clear`
 
-Vax@NUS will clear all the student and appointment data and display an empty list of student and appointment records.
+Vax@NUS will clear all the student and appointment data and display an empty list of student records and appointments.
 
 Format: `clear`
 
