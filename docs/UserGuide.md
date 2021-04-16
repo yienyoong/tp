@@ -189,7 +189,7 @@ All inputs specified are optional, but at least one of them must be provided. Af
 
 Examples:
 
-1. Suppose, John Doe, has just changed his course and is currently studying in the school of engineering. Simply enter the command `edit 7 r/ENG` into the command box to edit his faculty. 
+1. Suppose, John Doe, has just changed his course and is currently studying in the Faculty of Engineering. Simply enter the command `edit 7 r/ENG` into the command box to edit his faculty. 
 
 ![editBefore](images/editBefore.png)
 
@@ -210,7 +210,7 @@ Format: `delete MATRICULATION NUMBER`
   
 Examples:
 
-1. Suppose, you want to delete John Doe from the Vax@NUS' records. You can enter `delete A1234567X` into the command box. John Doe and his corresponding appointment will be deleted.
+1. Suppose, you want to delete John Doe from the Vax@NUS records. You can enter `delete A1234567X` into the command box. John Doe and his corresponding appointment will be deleted.
 
 ![deleteBefore](images/deleteBefore.png)
 
@@ -313,7 +313,7 @@ Format: `deleteAppt MATRICULATION_NUMBER`
   the matriculation number or appointment is not found.
 
 Examples:
-1.  `deleteAppt A1234567X` into the command box deletes John Doe's appointments from the records, provided he had an appointment scheduled previously.
+1.  Enter `deleteAppt A1234567X` into the command box to delete John Doe's appointments from the records, provided he had an appointment scheduled previously.
 
 ![DeleteApptBefore](images/deleteApptBefore.png)
 
