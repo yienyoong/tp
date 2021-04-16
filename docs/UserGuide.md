@@ -210,7 +210,7 @@ Format: `delete MATRICULATION NUMBER`
   
 Examples:
 
-1. Suppose, you want to delete John Doe from the Vax@NUS records. You can enter `delete A1234567X` into the command box. John Doe and his corresponding appointment will be deleted.
+1. Suppose, you want to delete John Doe from Vax@NUS records. You can enter `delete A1234567X` into the command box. John Doe and his corresponding appointment will be deleted.
 
 ![deleteBefore](images/deleteBefore.png)
 
