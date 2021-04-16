@@ -47,9 +47,9 @@ This section aims to help you to navigate the user guide.
 
 ## Quick start
 
-1. Ensure you have Java 11 or above installed in your Computer.
+1. Ensure you have Java `11` or above installed in your Computer.
 
-1. Download the latest **VaxAtNUS.jar** from [here](https://github.com/AY2021S2-CS2103T-W10-4/tp/releases).
+1. Download the latest `VaxAtNUS.jar` from [here](https://github.com/AY2021S2-CS2103T-W10-4/tp/releases).
 
 1. Copy the file to the folder you want to use as the _home folder_ for your Vax@NUS application.
 
@@ -81,6 +81,27 @@ This section aims to help you to navigate the user guide.
 
 --------------------------------------------------------------------------------------------------------------------
 
+## Prefix Table
+
+This table shows you which prefix should be used for the different pieces of information.
+
+Prefix | Keyword           | Used As
+-------|-------------------|----------                  
+**n/** | NAME              | `n/NAME`
+**f/** | FACULTY           | `f/FACULTY`
+**p/** | PHONE_NUMBER      | `p/PHONE_NUMBER`
+**e/** | EMAIL             | `e/EMAIL`
+**a/** | ADDRESS           | `a/ADDRESS`
+**s/** | VACCINATION_STATUS| `s/VACCINATION_STATUS`
+**m/** | MEDICAL_DETAILS   | `m/MEDICAL_DETAILS`
+**r/** | SCHOOL_RESIDENCE  | `r/SCHOOL_RESIDENCE`
+
+Please also refer to the [Input Formats](#input-formats) section below to find out how the information
+should be formatted.
+
+
+----------------------------------------------------------------------------------------------------
+
 ## Features
 
 <div markdown="block" class="alert alert-info">
@@ -95,22 +116,6 @@ This section aims to help you to navigate the user guide.
     
 * Prefixed parameters can be in any order.<br>
   e.g. if the command specifies `n/NAME p/PHONE_NUMBER`, `p/PHONE_NUMBER n/NAME` is also acceptable.
-
-* This table shows you which prefix should be used for the different pieces of information.
-
-   Prefix | Keyword           | Used As
-    -------|-------------------|----------                  
-    **n/** | NAME              | `n/NAME`
-    **f/** | FACULTY           | `f/FACULTY`
-    **p/** | PHONE_NUMBER      | `p/PHONE_NUMBER`
-    **e/** | EMAIL             | `e/EMAIL`
-    **a/** | ADDRESS           | `a/ADDRESS`
-    **s/** | VACCINATION_STATUS| `s/VACCINATION_STATUS`
-    **m/** | MEDICAL_DETAILS   | `m/MEDICAL_DETAILS`
-    **r/** | SCHOOL_RESIDENCE  | `r/SCHOOL_RESIDENCE`
-
-* Please also refer to the [Input Formats](#input-formats) section below to find out how the information
-should be formatted.
 
 </div>
 
@@ -189,7 +194,7 @@ All inputs specified are optional, but at least one of them must be provided. Af
 
 Examples:
 
-1. Suppose, John Doe, has just changed his course and is currently studying in the school of engineering. Simply enter the command `edit 7 r/ENG` into the command box to edit his faculty. 
+1. Suppose, John Doe has just changed his course and is currently studying in the Faculty of Engineering. Simply enter the command `edit 7 r/ENG` into the command box to edit his faculty. 
 
 ![editBefore](images/editBefore.png)
 
@@ -210,7 +215,7 @@ Format: `delete MATRICULATION NUMBER`
   
 Examples:
 
-1. Suppose, you want to delete John Doe from the Vax@NUS' records. You can enter `delete A1234567X` into the command box. John Doe and his corresponding appointment will be deleted.
+1. Suppose, you want to delete John Doe from the Vax@NUS records. You can enter `delete A1234567X` into the command box. John Doe and his corresponding appointment will be deleted.
 
 ![deleteBefore](images/deleteBefore.png)
 
@@ -313,7 +318,7 @@ Format: `deleteAppt MATRICULATION_NUMBER`
   the matriculation number or appointment is not found.
 
 Examples:
-1.  `deleteAppt A1234567X` into the command box deletes John Doe's appointments from the records, provided he had an appointment scheduled previously.
+1.  Enter `deleteAppt A1234567X` into the command box to delete John Doe's appointments from the records, provided he had an appointment scheduled previously.
 
 ![DeleteApptBefore](images/deleteApptBefore.png)
 
