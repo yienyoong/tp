@@ -8,20 +8,14 @@ title: User Guide
 --------------------------------------------------------------------------------------------------------------------
 ## Introduction
 
-Welcome to Vax@NUS!
+Welcome to Vax@NUS! 
 
-Vax@NUS was conceived at the start of Singapore's COVID-19 vaccination campaign. Our team sought to develop a solution to keep track and schedule COVID-19 vaccinations 
-for the University Health Centre (UHC), which is responsible for administering vaccines to NUS students. 
-Feedback gathered from staff revealed that the existing system was slow and difficult to use, potentially impacting the speed of the vaccination rollout. 
-
-Therefore, Vax@NUS was developed. It is a **one stop management app to efficiently track and schedule COVID-19 vaccinations for NUS students.** 
+Vax@NUS is a **one stop management app to efficiently track and schedule COVID-19 vaccinations for NUS students.** 
 It allows UHC staff to enter profiles of NUS students into the app, create and schedule vaccination appointments for students, and update their details with just a few simple commands.
 Staff can also use the statistic function to view at a glance, the vaccination rates of students, and the number of appointments booked for the upcoming week.
 
-Vax@NUS is a desktop app **optimized for use via a Command Line Interface (CLI)** while still having the benefits of a Graphical User Interface (GUI).
+It is a desktop app **optimized for use via a Command Line Interface (CLI)** while still having the benefits of a Graphical User Interface (GUI).
 If you can type fast, Vax@NUS can get your appointment management tasks done faster than traditional GUI apps.
-
-This project was done as part of the module CS2103T Software Engineering at the School of Computing of the National University of Singapore.
 
 Read on to find out how you can use Vax@NUS.
 
@@ -30,13 +24,13 @@ Read on to find out how you can use Vax@NUS.
 This section aims to help you to navigate the user guide. 
 <br> 
 
-[Quick start](#quick-start) section has been provided to help you set up Vax@NUS. 
+1. A [Quick start](#quick-start) section has been provided to help you set up Vax@NUS. 
 <br>
 
-Alternatively, to learn more about our features and the details of each command, do refer to [Features](#features). 
+2. You may be interested in our [Features](#features) section to learn more about our features and the details of each command. 
 <br>
 
-If you are interested to know about the valid input taken in by our commands, do take a look at [Input-Formats](#input-formats).
+3. For a smooth user experience, please refer to the [Input Formats](#input-formats) section for more information regarding the input format accepted by the commands.
 
 <div markdown="block" class="alert alert-info">
 
@@ -81,7 +75,7 @@ If you are interested to know about the valid input taken in by our commands, do
     Deletes the information for John Doe, identified by his matriculation number, from the student records. Note that since
      John Doe also has a vaccination appointment created, the appointment will also be deleted. 
 
-1. Refer to the [Features](#features) below for details of each command.
+1. Refer to the [Features](#features) section below for details of each command.
 1. When you are ready, you can remove all sample data with the `clear` command and begin adding real data. 
 
 
@@ -181,7 +175,7 @@ To add a new student,
 
 ![AddStudentBefore](images/addStudentBefore.png)
 
- 2. The new student will be added at the end of the list and into Vax@NUS' record. The list of students will be also display the new student's particulars.
+ 2. The new student will be added at the bottom of the list and into Vax@NUS' record. 
 ![AddStudentAfter](images/addStudentAfter.png)
 
 #### Editing a student record: `edit`
@@ -200,7 +194,7 @@ All inputs specified are optional, but at least one of them must be provided. Af
 
 Examples:
 
-1. Suppose, John Doe, has just changed his course and is currently studying in the school of engineering. Simply enter the command `edit 7 r/ENG` to edit his faculty. 
+1. Suppose, John Doe, has just changed his course and is currently studying in the school of engineering. Simply enter the command `edit 7 r/ENG` into the command box to edit his faculty. 
 
 ![editBefore](images/editBefore.png)
 
@@ -221,7 +215,7 @@ Format: `delete MATRICULATION NUMBER`
   
 Examples:
 
-1. Suppose, you want to delete John Doe from the records. You can enter `delete A1234567X` and his corresponding appointment will be deleted as well.
+1. Suppose, you want to delete John Doe from the Vax@NUS' records. You can enter `delete A1234567X` into the command box. John Doe and his corresponding appointment will be deleted.
 
 ![deleteBefore](images/deleteBefore.png)
 
@@ -251,7 +245,7 @@ Examples:
 * `filter COM` 
 * `filter RVRC` 
 
-1. Enter `filter vaccinated` to see a list of vaccinated students. 
+1. Enter `filter vaccinated` into the command box to see a list of vaccinated students. 
 ![filter](images/filter.png)
 
 #### Viewing statistics for student population: `stats`
@@ -276,7 +270,7 @@ Examples:
 * `stats NUS` displays the percentage of vaccinated students in NUS.
 * `stats all` displays the list of percentages of vaccinated students in every Faculty and School Residence.
 
-1. To see the percentage of vaccinated residents in PGPH , simply enter `stats PGPH`
+1. Enter `stats PGPH` into the command box to see the percentage of vaccinated residents in PGPH.
 ![StatsResidence](images/statsResidence.png)
 
 ### Appointment Management Features
@@ -292,7 +286,7 @@ Appointments can be added for both unvaccinated and vaccinated students, as appo
 Format: `addAppt MATRICULATION_NUMBER d/DATE ts/START_TIME`
 
 Examples:
-1. Simply enter `addAppt A1234567X d/2021-12-13 ts/13:00` to add an appointment for John Doe.
+1. Enter `addAppt A1234567X d/2021-12-13 ts/13:00` into the command box to add an appointment for John Doe.
 
 ![AddApptBefore](images/AddApptBefore.png)
 
@@ -307,7 +301,7 @@ Format: `editAppt MATRICULATION_NUMBER d/DATE ts/START_TIME`
 
 Examples:
 
-1. Enter `editAppt A1234567X d/2021-11-13 ts/14:00` to change John Doe's appointment time from 1pm to 2pm.
+1. Enter `editAppt A1234567X d/2021-11-13 ts/14:00` into the command box to change John Doe's appointment time from 1pm to 2pm.
 
 ![editApptBefore](images/editApptBefore.png)
 
@@ -324,7 +318,7 @@ Format: `deleteAppt MATRICULATION_NUMBER`
   the matriculation number or appointment is not found.
 
 Examples:
-1.  `deleteAppt A1234567X` deletes John Doe's appointments from the records, provided he had an appointment scheduled previously.
+1.  `deleteAppt A1234567X` into the command box deletes John Doe's appointments from the records, provided he had an appointment scheduled previously.
 
 ![DeleteApptBefore](images/deleteApptBefore.png)
 
@@ -337,10 +331,9 @@ Examples:
 Displays the number of upcoming and previous appointments within 1 week from the current day, including the current day.
 E.g., if today is Monday, `statsAppt` will count upcoming appointments from Monday(Today) - Sunday and past appointments from last Tuesday - Monday(Today).
 
-Format: <br>
-`statsAppt`
+Format: `statsAppt`
 
-1. Enter `statsAppt` to keep track of the numbers of appointments in a week.  
+1. Enter `statsAppt` into the command box to keep track of the numbers of appointments in a week.  
 ![StatsAppt](images/statsAppt.png)
 > Remark: Screenshot was taken on 9 April 2021.
 
