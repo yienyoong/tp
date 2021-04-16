@@ -106,7 +106,7 @@ should be formatted.
 
 ----------------------------------------------------------------------------------------------------
 
-# Features
+## Features
 
 <div markdown="block" class="alert alert-info">
 
