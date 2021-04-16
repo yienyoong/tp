@@ -288,7 +288,7 @@ Examples:
 
 2. The list of appointments will be updated accordingly after the appointment deletion.  
 
-|![DeleteApptAfter](images/deleteApptAfter.png)
+![DeleteApptAfter](images/deleteApptAfter.png)
 
 ### Viewing statistics for appointments: `statsAppt`
 Displays the number of upcoming and previous appointments within 1 week from the current day, including the current day.
@@ -337,7 +337,7 @@ Vax@NUS will clear all the student and appointment data and display an empty lis
 
 Format: `clear`
 
-![EmptyStudentBook](images/EmptyStudentBook.png)
+![clear](images/clear.png)
 
 ### Exiting the program : `exit`
 
