@@ -100,7 +100,9 @@ Prefix | Keyword           | As Used
 
 Please also refer to the [Input Formats](#input-formats) section below to find out how the information
 should be formatted.
---------------------
+
+
+----------------------------------------------------------------------------------------------------
 
 ## Features
 
