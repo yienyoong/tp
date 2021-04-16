@@ -60,7 +60,9 @@ If you are interested to know about the valid input taken in by our commands, do
    Sample data will be displayed to show you how the user interface of the app looks.
    
    ![Ui](images/Ui.png)
-
+   
+   ![StudentCardUi](images/StudentCard.png)
+   
 1. Type the command in the command box and press Enter to execute it. e.g. typing **`help`** and pressing Enter will open the help window.<br>
 
 1. Before you begin using Vax@NUS, here are some example commands you can use to work with the sample data to familarize yourself:
